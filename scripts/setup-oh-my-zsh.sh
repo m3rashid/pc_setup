@@ -14,4 +14,6 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 omz update # to update OH-My-ZSH
 
+chsh -s $(which zsh) # to set zsh as the default shell { after this step, logout and login back to take effect }
+
 # uninstall oh_my_zsh # To uninstall Oh-My-ZSH
