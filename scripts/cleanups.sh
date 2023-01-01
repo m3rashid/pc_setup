@@ -6,6 +6,7 @@ sudo apt remove \
     gnome-sudoku \
     aisleriot
 
+sudo apt remove firefox thunderbird
 sudo snap remove firefox
 
 sudo apt autoremove 
