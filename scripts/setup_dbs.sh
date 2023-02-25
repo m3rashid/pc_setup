@@ -20,11 +20,26 @@ ALTER USER <username> WITH PASSWORD 'new_password'; # in the psql prompt
 ################################
 ### Set up Mongodb Community ###
 ################################
+
+# @deprecated for Ubuntu 22.04 LTS
+# This script works for Mongodb Community version 5 on Ubuntu 20.04 LTS 
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add - \
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list \
 sudo apt-get update \
 sudo apt-get install -y mongodb-org \
 systemctl status mongod 
+
+# Ubuntu 22.04 LTS version implements libssl3 and also apt-key is deprecated. This could lead to potential issues in future
+# So use this for Ubuntu 22.04 LTS
+sudo apt update
+sudo apt install wget curl gnupg2 software-properties-common apt-transport-https ca-certificates lsb-release
+curl -fsSL https://www.mongodb.org/static/pgp/server-6.0.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mongodb-6.gpg
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu $(lsb_release -cs)/mongodb-org/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-6.0.list
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.16_amd64.deb
+sudo apt update
+sudo apt install mongodb-org
+sudo systemctl enable mongod
+sudo systemctl start mongod
 
 # Install Mongodb Compass
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.33.1_amd64.deb
