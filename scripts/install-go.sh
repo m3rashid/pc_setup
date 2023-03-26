@@ -10,3 +10,8 @@ source $HOME/.profile
 # Setting path
 echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
 echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.zshrc
+
+
+
+# For ubuntu 22 onwards, Go comes in the universe apt line, you may install it directly from the command line using apt
+# sudo apt install golang-go
