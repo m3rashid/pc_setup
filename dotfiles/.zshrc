@@ -1,3 +1,4 @@
+# Path: ~/.zshrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -115,3 +116,4 @@ export PNPM_HOME="/home/genos/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
 
+alias vim="~/nvim-linux64/bin/nvim"
