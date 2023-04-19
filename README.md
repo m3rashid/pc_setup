@@ -119,7 +119,5 @@ Gnome-tweaks
 ```bash
 ps -p$$ -ocmd= # To Check current shell
 ```
+![](./images/tmux.png)
 
-### Keyboard Shortcuts
-
-![Screenshot Shortcuts](images/screenshot.png)
