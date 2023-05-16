@@ -2,7 +2,7 @@
 
 # Setup Linux Cron Job
 # crontab -e
-# 28 * * * * /bin/bash /home/genos/code/m3rashid/archives/pc_setup/jobs/github.sh
+# 0 * * * * /home/genos/code/m3rashid/archives/pc_setup/jobs/github.sh
 
 declare -a repositories=(
 	"/home/genos/Documents/Obsidian\ Vault"
@@ -21,8 +21,7 @@ for i in "${repositories[@]}"
 do
 	cd $i
 	git add .
-	git commit -m "update(app): periodic Auto update"
+	git commit -m "update(app): periodic auto update"
 	git push origin main
-	echo "Pushed to github $i" 
 	sleep 2
 done
