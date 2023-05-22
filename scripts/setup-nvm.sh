@@ -9,4 +9,4 @@ export NVM_DIR="$HOME/.nvm"
 # Install subsequent nodejs versions
 nvm install 16
 
-npm i -g yarn pnpm tldr
+npm i -g yarn pnpm tldr npm-check-updates
