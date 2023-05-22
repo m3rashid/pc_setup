@@ -29,3 +29,6 @@ sudo apt install \
 # Also setup the user/database for mysql and postgres
 # Setup the redis-server for other than localhost clients
 # Setup ZSH with (1) option
+
+# install rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
