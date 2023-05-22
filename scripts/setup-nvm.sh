@@ -9,4 +9,4 @@ export NVM_DIR="$HOME/.nvm"
 # Install subsequent nodejs versions
 nvm install 16
 
-npm i -g yarn pnpm
+npm i -g yarn pnpm tldr
