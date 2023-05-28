@@ -24,7 +24,8 @@ sudo apt install \
     vlc \
     neofetch \
     gnome-shell-extensions \
-    gnome-tweaks
+    gnome-tweaks \
+    tmux
 
 # Also setup the user/database for mysql and postgres
 # Setup the redis-server for other than localhost clients
