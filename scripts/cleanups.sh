@@ -1,5 +1,6 @@
 sudo apt update
 sudo apt upgrade
+sudo apt autoremove
 
 sudo apt remove \
     gnome-mines \
