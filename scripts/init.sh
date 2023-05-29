@@ -1,11 +1,11 @@
 echo "MD Rashid Hussain";
 
 echo "Cleanint up tasks";
-curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/cleanups.sh
+curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/cleanups.sh | bash
 echo "Done";
 
 echo "Installing prefernces";
-curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/install-my-preferences.sh
+curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/install-my-preferences.sh | bash
 echo "Done";
 
 echo "Seting up TMUX config";
