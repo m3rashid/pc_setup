@@ -42,3 +42,7 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshrc
 # to check if go is installed
 # go version
+
+# Setup TMUX
+curl -i -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/dotfiles/.tmux.conf | cat > ~/.tmux.conf
+
