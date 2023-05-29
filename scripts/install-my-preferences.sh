@@ -8,24 +8,23 @@ sudo apt autoremove
 
 # install good packages
 sudo apt install \
-    git \
-    build-essential \
-    apt-transport-https \
-    curl \
-    pdfarranger \
-    mlocate \
-    obs-studio \
-    redis-server \
-    npm \
-    mysql-server \
-    postgresql \
-    postgresql-contrib \
-    zsh \
-    vlc \
-    neofetch \
-    gnome-shell-extensions \
-    gnome-tweaks \
-    tmux
+    git \                       # version control
+    build-essential \           # GCC, G++ and other build tools
+    apt-transport-https \       # HTTPS support
+    curl \                      # Network Requests
+    pdfarranger \               # PDF re-arranging/combining tool
+    mlocate \                   # Better Global search
+    obs-studio \                # Record Screen
+    redis-server \              # In memory DB
+    mysql-server \              # MYSQL DB
+    postgresql \                # PostgresQL DB
+    postgresql-contrib \        # Postgres lib
+    zsh \                       # Better Shell
+    vlc \                       # Video Player
+    neofetch \                  # Shell Details
+    gnome-shell-extensions \    # Shell Extensions Support
+    gnome-tweaks \              # Customize Gnome
+    tmux                        # Better Terminal and splits
 
 # Also setup the user/database for mysql and postgres
 # Setup the redis-server for other than localhost clients
