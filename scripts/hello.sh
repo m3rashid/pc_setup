@@ -1,1 +1,0 @@
-sudo echo "hello";
