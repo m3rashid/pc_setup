@@ -1,3 +1,6 @@
+sudo apt update
+sudo apt upgrade
+
 sudo apt remove \
     gnome-mines \
     gnome-mahjongg \
