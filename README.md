@@ -6,6 +6,3 @@ or
 ```bash
 curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/init.sh | bash
 ```
-
-![](./images/tmux.png)
-
