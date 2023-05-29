@@ -7,25 +7,6 @@ or
 curl -X GET https://raw.githubusercontent.com/m3rashid/pc_setup/main/scripts/init.sh | bash
 ```
 
-### Brave Web Extensions
-
-```bash
-https://chrome.google.com/webstore/
-- grepper
-- react-developer-tools
-- redux-devtools
-- gitpod-always-ready-to-co
-- pesticide-for-chrome-with
-```
-
-### Install Notion Desktop
-
-```bash
-# Download the unofficial .deb package from github (check if any update available, download the latest build)
-https://github.com/valerie-makes/notion-linux/releases/tag/v2.0.6-windows
-# Install using Ubuntu Software Install
-```
-
 ### Gnome Shell Extensions
 
 ```bash
