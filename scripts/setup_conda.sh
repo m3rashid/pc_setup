@@ -15,5 +15,5 @@ conda install -c conda-forge nb_conda_kernels
 conda install -c conda-forge jupyterlab
 conda install -c conda-forge nb_conda_kernels
 
+conda install pip
 conda install -c conda-forge jupyter_contrib_nbextensions
-
