@@ -9,4 +9,8 @@ chmod +x ./Anaconda3-2023.07-2-Linux-x86_64.sh
 # conda config --set auto_activate_base false
 # Thank you for installing Anaconda3!
 
+conda install -c conda-forge notebook
+conda install -c conda-forge nb_conda_kernels
 
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge nb_conda_kernels
