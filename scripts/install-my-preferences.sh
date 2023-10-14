@@ -24,7 +24,8 @@ sudo apt install \
     neofetch \                  # Shell Details
     gnome-shell-extensions \    # Shell Extensions Support
     gnome-tweaks \              # Customize Gnome
-    tmux                        # Better Terminal and splits
+    tmux \                      # Better Terminal and splits
+    default-jdk default-jre     # Java
 
 # Also setup the user/database for mysql and postgres
 # Setup the redis-server for other than localhost clients
