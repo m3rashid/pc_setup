@@ -34,9 +34,9 @@ sudo apt install \
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # install go
-curl https://go.dev/dl/go1.21.3.linux-amd64.tar.gz --output ~/Downloads/go1.21.3.linux-amd64.tar.gz
+curl https://go.dev/dl/go1.21.3.linux-amd64.tar.gz --output ~/Downloads/go.tar.gz
 rm -rf /usr/local/go
-sudo tar -C /usr/local -xzf ~/Downloads/go1.21.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf ~/Downloads/go.tar.gz
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.zshrc
 # to check if go is installed
