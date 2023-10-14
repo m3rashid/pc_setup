@@ -1,6 +1,6 @@
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-export ZSH_CUSTOM="$HOME/"
+export ZSH_CUSTOM="$HOME"
 
 # ZSH plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
