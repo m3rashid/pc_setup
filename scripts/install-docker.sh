@@ -42,6 +42,12 @@ sudo service docker start
 # Test it by pulling and running a container, then delete the old docker directory
 sudo rm -rf /var/lib/docker.old
 
+sudo apt install gnome-terminal
+sudo apt remove docker-desktop
+
+rm -r $HOME/.docker/desktop
+sudo rm /usr/local/bin/com.docker.cli
+sudo apt purge docker-desktop
 # Download docker desktop deb file and install it like any other deb file
 # sudo apt install ./docker-desktop-.....
 # Go to settings > Resources > Disk Image Location > /path/to/your/docker (set a path to the new docker data directory)
